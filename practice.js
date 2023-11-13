@@ -299,12 +299,14 @@ const employees = [
 */
 
 function employeeUpdater(){
- // for(let firstName in employees){
-   // if(employees[firstName] === 'Theo')
-    //delete 
-  //} 
-  //if(employees[firstName] === 'Lorie')
-  //employees.department = 'HR'
+ for(let i = 0; i < employees.length; i++){
+   if(employees[i].firstName === 'Theo'){
+    employees.splice(i, 1)
+   } else if(employees[i].firstName === 'Lorie'){
+    employees[i].department = 'HR'
+   }
+  } 
+  return employees
 }
 
 
@@ -333,7 +335,7 @@ const cat = {
 */
 
 //Code Here
-let grumpyActivity = (catFriends[0].activities[1]);
+let (catFriends[0].activities[1]) = grumpyActivity
 let fluffy2ndFriend;
 
 /// ////////////// PROBLEM 17 ///////////////////
@@ -372,7 +374,9 @@ const myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner(){
+  
+}
 
 /// ////////////// PROBLEM 18 ///////////////////
 
@@ -390,7 +394,9 @@ const myCar = {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers({first, second, third}){
+
+}
 
 /// ////////////// PROBLEM 19 ///////////////////
 
@@ -400,4 +406,6 @@ const myCar = {
   Find the longest array and return that array.
 */
 
-//Code Here
+function numberGroups({a, b, c}){
+
+}
